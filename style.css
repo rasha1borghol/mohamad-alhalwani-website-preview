@@ -1,0 +1,73 @@
+:root {
+    --primary-yellow: #FFD700; 
+    --dark-black: #121212;     
+    --soft-black: #1E1E1E;     
+}
+
+body { font-family: 'Cairo', sans-serif; background-color: var(--dark-black); color: #fff; scroll-behavior: smooth; }
+
+/* Navbar */
+.navbar { background-color: rgba(0,0,0,0.95); border-bottom: 2px solid var(--primary-yellow); }
+.nav-link { color: #fff !important; margin-right: 15px; }
+.nav-link:hover { color: var(--primary-yellow) !important; }
+
+/* Hero */
+.hero-section { padding: 100px 0; background: #000; }
+.fw-black { font-weight: 900; }
+
+/* Section Title */
+.section-title { 
+    width: fit-content; 
+    border-bottom: 4px solid var(--primary-yellow); 
+    padding-bottom: 10px; 
+    margin-bottom: 50px; 
+    font-weight: 800; 
+}
+
+/* About */
+.bg-soft-black { background-color: var(--soft-black); }
+.about-text { font-size: 1.2rem; line-height: 2; color: #ccc; }
+
+/* Guinness Section */
+.guinness-section .bg-warning { transition: transform 0.3s; }
+.guinness-section .bg-warning:hover { transform: scale(1.02); }
+
+/* Category Cards */
+.category-card { 
+    background-color: var(--soft-black); border: 1px solid #333; transition: 0.3s; 
+}
+.category-card:hover { border-color: var(--primary-yellow); transform: translateY(-10px); }
+.card-icon { font-size: 2.5rem; color: var(--primary-yellow); }
+.card-title { color: #fff; margin-top: 10px; }
+
+/* Footer */
+.footer { padding: 60px 0; background: #000; border-top: 1px solid #333; }
+.social-links i { font-size: 1.5rem; color: var(--primary-yellow); }
+/* تنسيق أيقونات السوشيال ميديا */
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #252525; /* خلفية داكنة للأيقونة */
+    border: 1px solid var(--primary-yellow);
+    color: var(--primary-yellow) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* دائرية */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-yellow);
+    color: #000 !important;
+    transform: translateY(-5px); /* حركة للأعلى */
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.footer {
+    padding: 60px 0;
+    background: #000;
+    border-top: 2px solid #222;
+}
